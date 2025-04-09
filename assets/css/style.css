@@ -1,0 +1,56 @@
+body {
+    background: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+}
+
+iframe {
+    margin-top: 1rem;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+h1 {
+    color: #1b72ff;
+    font-size: 2.3rem;
+}
+
+h3.titulo {
+    font-size: 1.1rem;
+}
+
+p.sobre {
+    width: 40rem;
+}
+
+img.foto {
+    width: 250px;
+    border: 0.18rem solid #1b72ff;
+    border-radius: 0.7rem;
+    padding: 0.2rem;
+}
+
+.divider {
+    margin: 2rem 0;
+    border: 0.1rem solid #000000;
+}
+
+.tabs a {
+    border: 0.18rem solid #1b72ff;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+    text-decoration: none;
+    color: #000000;
+
+    transition: all 0.3s;
+}
+
+.tabs a:hover {
+    background: #1b72ff;
+    color: #fff;
+}
