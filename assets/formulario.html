@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário de Serviço</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <h2 class="titulo">Solicitação de Serviço</h2>
+    <form class="formulario" action="#" method="post" enctype="multipart/form-data">
+      <fieldset class="caixa-formulario">
+        <legend>Informações Pessoais</legend>
+  
+        <label for="nome">Nome:</label>
+        <input class="campo" type="text" id="nome" name="nome" required />
+  
+        <label for="sobrenome">Sobrenome:</label>
+        <input class="campo" type="text" id="sobrenome" name="sobrenome" required />
+  
+        <label for="telefone">Telefone:</label>
+        <input class="campo" type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx" required />
+  
+        <label for="email">E-mail:</label>
+        <input class="campo" type="email" id="email" name="email" placeholder="exemplo@dominio.com" required />
+      </fieldset>
+  
+      <fieldset class="caixa-formulario">
+        <legend>Detalhes do Serviço</legend>
+  
+        <label for="mensagem">Mensagem:</label>
+        <textarea class="campo" id="mensagem" name="mensagem" rows="4" required></textarea>
+  
+        <label for="lingua">Língua do serviço:</label>
+        <select class="campo" id="lingua" name="lingua" required>
+          <option value="ingles">Inglês</option>
+          <option value="espanhol">Espanhol</option>
+          <option value="frances">Francês</option>
+          <option value="portugues">Português (pt-br)</option>
+        </select>
+  
+        <label for="arquivo">Upload de Protótipo:</label>
+        <input class="campo" type="file" id="arquivo" name="arquivo" accept=".pdf,.doc,.docx,.jpeg,.jpg,.png" />
+  
+        <label for="linguagens">Linguagens Preferidas:</label>
+        <select class="campo" name="linguagens[]" multiple required>
+          <option value="html">HTML</option>
+          <option value="css">CSS</option>
+          <option value="javascript">JavaScript</option>
+          <option value="react">React</option>
+          <option value="java">Java</option>
+        </select>
+  
+        <p>Banco de Dados Recomendado:</p>
+        <div class="opcoes">
+          <input type="radio" id="mysql" name="bd" value="MySQL" required />
+          <label for="mysql">MySQL</label>
+  
+          <input type="radio" id="mongodb" name="bd" value="MongoDB" />
+          <label for="mongodb">MongoDB</label>
+  
+          <input type="radio" id="postgresql" name="bd" value="PostgreSQL" />
+          <label for="postgresql">PostgreSQL</label>
+        </div>
+  
+        <label for="turno">Turno de Preferência:</label>
+        <select class="campo" name="turno" id="turno" required>
+          <option value="manha">Manhã</option>
+          <option value="tarde">Tarde</option>
+          <option value="noite">Noite</option>
+        </select>
+  
+        <label for="horario">Melhor Horário:</label>
+        <input class="campo" type="time" id="horario" name="horario" required />
+  
+        <label for="data">Previsão de Entrega:</label>
+        <input class="campo" type="date" id="data" name="data" required />
+      </fieldset>
+  
+      <div class="botoes">
+        <button type="reset" class="botao">Limpar</button>
+        <button type="submit" class="botao">Enviar</button>
+      </div>
+    </form>
+  </body>  
+</html>
